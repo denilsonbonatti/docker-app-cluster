@@ -35,7 +35,7 @@ $host_name = gethostname();
 $host_ip = $_SERVER['REMOTE_ADDR'];
 
 
-$query = "INSERT INTO dados (id, data1, data2, host, ip) VALUES ('$valor_rand1' , '$valor_rand2', '$host_name', $host_ip)";
+$query = "INSERT INTO dados (id, data1, data2, host, ip) VALUES ('$valor_rand1' , '$valor_rand2', '$valor_rand2', '$host_name', '$host_ip')";
 
 
 if ($link->query($query) === TRUE) {
